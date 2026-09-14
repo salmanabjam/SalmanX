@@ -1,0 +1,16 @@
+:root{--ember:#FF5A1F;--core:#061826;--light:#F4F4F4;--mist:#5A7B8C;--line:#183443}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 70% 0,#132634 0,#061826 34%,#030b11 100%);color:var(--light);font-family:Inter,Arial,sans-serif;line-height:1.5}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;background:linear-gradient(90deg,transparent 49.8%,rgba(255,90,31,.035) 50%,transparent 50.2%)}
+.nav,main,footer{width:min(1120px,calc(100% - 32px));margin:auto}.nav{display:flex;justify-content:space-between;align-items:center;padding:28px 0}
+.brand{font-size:28px;font-weight:900;letter-spacing:-1px}.brand b{color:var(--ember)}.live{font-size:12px;letter-spacing:2px;color:#b9c8d0}
+.hero{padding:110px 0 90px;max-width:850px}.kicker{color:var(--ember);font-size:12px;font-weight:800;letter-spacing:3px}
+h1{font-size:clamp(48px,8vw,96px);line-height:.98;letter-spacing:-4px;margin:18px 0 24px}.lead{max-width:720px;color:#bac6cc;font-size:20px}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:34px}.actions a{padding:14px 20px;border-radius:12px;text-decoration:none;font-weight:800}
+.primary{background:var(--ember);color:#071018}.secondary{border:1px solid #355061;color:var(--light)}
+.brand-visual{margin:0 0 18px;border:1px solid var(--line);border-radius:22px;overflow:hidden;background:#02090d;box-shadow:0 0 70px rgba(255,90,31,.08)}
+.brand-visual img{display:block;width:100%;height:auto}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.grid article,.proof,.vision{background:rgba(8,28,40,.72);border:1px solid var(--line);border-radius:20px;padding:28px}
+.grid small{color:var(--ember)}h2{font-size:32px;margin:8px 0 12px}.grid p,.vision p,.proof p{color:#aebdc5}
+.proof,.vision{margin-top:18px}.proof code{display:block;margin:18px 0;padding:16px;background:#02090d;border-radius:12px;color:#ff8a52;word-break:break-all}
+.muted{font-size:14px}footer{display:flex;justify-content:space-between;gap:20px;padding:40px 0 54px;color:#758a96;font-size:12px;border-top:1px solid var(--line);margin-top:20px}
+@media(max-width:760px){.grid{grid-template-columns:1fr}.hero{padding:72px 0 60px}h1{letter-spacing:-2px}.lead{font-size:17px}footer{flex-direction:column}.nav{padding:20px 0}.live{font-size:10px}}
